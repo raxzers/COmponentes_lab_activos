@@ -1,0 +1,23 @@
+*1N4001**(silicio)
+*SRC=1N4007;DI_1N4001;Diodes;Si;  50.0V  1.00A  3.00us   Diodes, Inc. diode
+.MODEL DI_1N4007 D  ( IS=76.9p RS=42.0m BV=1000.0 IBV=5.00u
++ CJO=39.8p  M=0.333 N=1.45 TT=4.32u )
+**
+
+**LED_Rojo**
+.MODEL LED_ROJO1 D (IS=93.2P RS=42M N=3.73 BV=4 IBV=10U
++ CJO=2.97P VJ=.75 M=.333 TT=4.32U)
+**
+
+**1N4728**(germanio)
+.MODEL DI_1N4728 D( IS=15N N=2.22 BV=3.3 IBV=76M 
++      RS=169M CJO=4P VJ=750M M=330M FC=500M 
++      TT=100N EG=1.11 XTI=3 KF=0 AF=1 
++      )
+**
+
+
+**1N4148**(Zener)
+.MODEL DI_1N4148 D ( IS = 4.352E-9  N = 1.906  BV = 110  IBV = 0.0001  RS = 0.6458 
++ CJO = 7.048E-13  VJ = 0.869  M = 0.03  FC = 0.5  TT = 3.48E-9)
+**
